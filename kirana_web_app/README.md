@@ -1,14 +1,5 @@
 #########################READ readme.pdf for more info############################################
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 3c467dcc6fa088adb7558f6b822662afd9b1461f
-inframind season 3
-{
-    edge compiting solution
-    {
         #edge server side implimentaion
     
         app.py
@@ -59,7 +50,7 @@ inframind season 3
             }
         }
     }
-}
+
 
 templates--html files
 static--css js img files
