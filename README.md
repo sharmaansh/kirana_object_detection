@@ -1,2 +1,9 @@
-# kirana_object_detection-
-web app uses object detection to genrate bill for kirana(retail store) 
+#object detection billing system
+
+# read readme.pdf for better under standing
+
+#kirana contain web app files
+
+#darknet contain file regarding trainning objects
+
+#serverweb contain website file of bill desk and trainning console

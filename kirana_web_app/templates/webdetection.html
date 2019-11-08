@@ -1,0 +1,49 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+    <title>KIRANA STORE</title>
+    <link rel="stylesheet" type="text/css" href="static/webdetection.css">
+  </head>
+  <body background="static/webdetection.jpg" border="5">
+    <div class="container">
+      <img src="{{ url_for('video_feed') }}">
+    </div>
+    <div class="row">
+        <form>
+          <a href=# id=test><button id="muButton" class="btn">Add To Cart</button></a>
+          <a href=# id=testb><button class="buttonn">Remove From Cart</button></a> 
+          <button class="button" formaction="/checkbill">Check Bill</button> 
+        </form>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+    $(function() {
+    $('a#test').bind('click', function() {
+      
+    $.getJSON('/add_to_cart',
+        function(data) {
+      //do nothing
+    });
+    //alert('Item Added to cart');
+return false;
+});
+});
+</script>
+
+ <script type=text/javascript>
+  $(function() {
+  $('a#testb').bind('click', function() {
+   
+  $.getJSON('/remove_from_cart',
+      function(data) {
+    //do nothing
+  });
+  //alert('Item removed from cart');
+return false;
+});
+});
+</script>
+
+  </body>
+</html>
